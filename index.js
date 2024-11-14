@@ -31,7 +31,8 @@ const sendSlack = ({repoName, labels, title, url, email}) => {
         },
         url: "https://slack.com/api/chat.postMessage",
         data: {
-            channel: `@${name}`,
+            //channel: `@${name}`,
+            channel: "#dev1_members",
             text: "리뷰 요청을 받았어요! 😊",
             blocks: [
                 {
